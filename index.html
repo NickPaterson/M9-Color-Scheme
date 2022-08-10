@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Colour Scheme">
+        <meta name="author" content="Nick Paterson">
+        
+        <title>Colour Scheme</title>
+        
+        <link href="core.css" rel="stylesheet">
+        <link href="theme.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+        <script src="core.js" defer></script>
+        <script src="theme.js" defer></script>
+        <script src="https://kit.fontawesome.com/c2beb66899.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container flex">
+                <h1>Colour Schemes</h1>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+            </div>
+        </header>
+        <main class="flex">
+            <div class="container">
+                <form id="color-picker-form" class="form-container flex">
+                    <input id="selector-clr" type="color" name="color">
+                    <select id="selector-scheme" type="dropdown" name="scheme">
+                        <option value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome-dark</option>
+                        <option value="monochrome-light">Monochrome-light</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic-complement</option>
+                        <option value="triad">Triad</option>
+                        <option value="quad">Quad</option>
+                    </select>
+                    <button id="submit-btn" type="submit">Get Color Scheme</button>
+                </form>
+                <div class="colour-scheme-container flex">
+                    <div id="clr1" class="colour-scheme-item"></div>
+                    <div id="clr2" class="colour-scheme-item"></div>
+                    <div id="clr3" class="colour-scheme-item"></div>
+                    <div id="clr4" class="colour-scheme-item"></div>
+                    <div id="clr5" class="colour-scheme-item"></div>
+                </div>
+                <div class="colour-codes-container flex">
+                    <div id="code1" class="colour-code-item"></div>
+                    <div id="code3" class="colour-code-item"></div>
+                    <div id="code2" class="colour-code-item"></div>
+                    <div id="code4" class="colour-code-item"></div>
+                    <div id="code5" class="colour-code-item"></div>
+                </div>
+            </div>
+        </main>
+        <footer class="flex">
+            <p>&copy; Nick Paterson</p>
+            <a href="https://github.com/NickPaterson" target="_blank">
+                <i class="fa-brands fa-github fa-2xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/nick-paterson-92a1ba1b8/" target="_blank">
+                <i class="fa-brands fa-linkedin fa-2xl"></i>
+            </a>
+        </footer>
+        
+    </body>
+</html>
